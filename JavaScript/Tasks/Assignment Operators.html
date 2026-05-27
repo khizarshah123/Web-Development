@@ -1,0 +1,26 @@
+<script>
+ 
+a = 20
+b = 40
+
+a++   //a=20 ,memeory a=21
+++a    // a=22
+a+=b   //  a = 22+40 ,a = 62
+b+=40 * 2 + a  // b = b+40*2+62 , b = 40+142 ,b=182
+a+=20 * 2 + a + b // a = a + 20*2+62+182 , a = 62 + 284 ,a=346
+a++ //a=346 ,memory a=347
+b++ //b=182 ,memory b=183
+--b  //b=182
+--b  //b=181
+--b //b=180
+b++  //b=180 ,memory b=181
+a+=b  //a = 347+181 ,a=528
+b+=a //b= 181+528 ,b= 709
+b++  //b=709 ,memory b=710
+++b  //b=711
+++a  //  a=529
+
+document.write('a = ',a ,'<br>') 
+document.write('b = ',b)
+
+</script>
