@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+.div1{
+box-shadow: 3px 3px 7px;
+margin-top: 50px;
+height: 600px;
+width: 80%;
+margin-left: 200px;
+display: flex;
+
+}
+
+
+.divleft{
+margin-top: 20px;
+height: 550px;
+margin-left: 20px;
+width: 50%;
+}
+
+.divleft h1{
+    margin-left: 20px;
+    color: rgb(63, 63, 220);
+}
+
+.divleft p{
+margin-left: 20px;
+font-size:larger;
+
+}
+
+.divleft input::placeholder{
+padding-left: 10px;
+}
+
+.divleft input{
+    margin-left: 20px;
+    width: 80%;
+    height: 40px;
+    margin-top: 15px;
+}
+
+
+.divleft textarea{
+margin-top: 15px;
+margin-left: 20px;
+height: 100px;
+width: 80%;
+}
+
+textarea::placeholder
+{
+    padding-left: 10px;
+}
+
+
+.divleft button{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 81%;
+    background-color: rgb(63, 63, 220);
+    color: white;
+    border: none;
+}
+
+
+.divright{
+margin-top: 20px;
+height: 550px;
+margin-left: 20px;
+width: 45%;
+}
+
+.divright iframe{
+    height: 549px;
+    width: 552px;
+}
+
+.iconcontainer
+{
+   margin-top: 30px;
+   margin-left: 140px;
+}
+
+
+.icons
+{
+   margin-left: 50px;
+}
+
+
+.fa-facebook
+{
+   text-align: center;
+   font-size: xx-large;
+   color: blue;
+}
+
+.fa-instagram
+{
+   color: rgb(217, 54, 82);
+   font-size: xx-large;
+}
+
+.fa-youtube
+{
+   color: red;
+   font-size: xx-large;
+}
+
