@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional Calculator</title>
+
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        font-family: Arial;
+    }
+
+    .calculator{
+        backdrop-filter: blur(15px);
+        background: rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    textarea{
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        background: rgba(255,255,255,0.2);
+        color: white;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    button{
+        width: 60px;
+        height: 50px;
+        margin: 5px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.15);
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    button:hover{
+        background: rgba(255,255,255,0.3);
+        transform: scale(1.1);
+    }
+
+    button:active{
+        transform: scale(0.95);
+    }
+
+    .equal{
+        background: #00c6ff;
+        color: black;
+    }
+
+    .equal:hover{
+        background: #00eaff;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="calculator">
+
+<textarea id="showData"></textarea><br>
+
+<button onclick="AddValue('1')">1</button>
+<button onclick="AddValue('2')">2</button>
+<button onclick="AddValue('3')">3</button>
+<button onclick="AddValue('+')">+</button><br>
+
+<button onclick="AddValue('4')">4</button>
+<button onclick="AddValue('5')">5</button>
+<button onclick="AddValue('6')">6</button>
+<button onclick="AddValue('-')">-</button><br>
+
+<button onclick="AddValue('7')">7</button>
+<button onclick="AddValue('8')">8</button>
+<button onclick="AddValue('9')">9</button>
+<button onclick="AddValue('0')">0</button><br>
+
+<button onclick="AddValue('*')">*</button>
+<button onclick="AddValue('/')">/</button>
+<button onclick="ClearData()">C</button>
+<button class="equal" onclick="finalResult()">=</button>
+
+</div>
+
+<script>
+    function AddValue(res){
+        document.getElementById("showData").innerHTML += res
+    }
+
+    function finalResult(){
+        var res = eval(document.getElementById("showData").value);
+        document.getElementById("showData").innerHTML = res
+    }
+    function ClearData(){
+        document.getElementById("showData").innerHTML = ""
+    }
+</script>
+
+</body>
+</html>
