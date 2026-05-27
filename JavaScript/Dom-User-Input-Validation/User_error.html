@@ -1,0 +1,48 @@
+
+
+<input type="text" id="name" placeholder="Enter User Name"><br>
+<span id="ErrorName"></span><br>
+
+<input type="email" id="email" placeholder="Enter User Email"> <br>
+<span id="ErrorEmail"></span><br>
+
+<input type="password" id="pass" placeholder="Enter User password"> <br>
+<span id="ErrorPass"></span><br>
+
+<button onclick="un()">Get</button>
+
+<script>
+
+     function un() {
+
+          var a = document.getElementById("name").value
+          var b = document.getElementById("email").value
+          var c = document.getElementById("pass").value
+
+          if(a==""){
+               document.getElementById("ErrorName").innerHTML = "User Name is Required!"
+          } 
+
+     
+          if(b==""){
+               document.getElementById("ErrorEmail").innerHTML = "User Email is Required!"
+          }
+
+          if(c==""){
+               document.getElementById("ErrorPass").innerHTML = "User Password is Required!"
+          }
+
+          if(a && b && c !='')
+          {
+           document.getElementById("ErrorName").innerHTML = a
+           document.getElementById("ErrorEmail").innerHTML = b
+           document.getElementById("ErrorPass").innerHTML = c
+          }
+
+
+
+     }
+
+</script>
+
+</html>
