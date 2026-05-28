@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        
+       
+        .sub1
+        {
+            margin-left:5px;
+        }
+        .sub2
+        {
+            margin-left: -1px;
+        }
+           .sub3
+        {
+            margin-left: 1px;
+        }
+        .sub4
+         {
+            margin-left: 2px;
+        }
+
+        .btn
+        {
+           
+            height: 30px;
+            width: 10%;
+            background-color:rgb(50, 50, 47);
+            margin-left: 30px;
+            color: white;
+            margin-top: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<form action = 'marksheetbackend.php'  method="post">
+<h1> Marksheet form</h1>
+Enter Name 
+<input type="text" placeholder="Enter Name " name = 'name'>
+<br><br>
+Fathername
+<input type="text" placeholder="Enter FName " name = 'fname'>
+<br><br>
+1st subject 
+<input type="number" placeholder="Enter marks " name = 'sub1' class="sub1">
+<br><br>
+2nd subject 
+<input type="number" placeholder="Enter marks " name = 'sub2' class="sub2">
+<br><br>
+3rd subject 
+<input type="number" placeholder="Enter marks " name = 'sub3' class="sub3">
+<br><br>
+4th subject 
+<input type="number" placeholder="Enter marks " name = 'sub4' class="sub4">
+<br><br>
+5th subject 
+<input type="number" placeholder="Enter marks " name = 'sub5' >
+<br><br>
+6th subject 
+<input type="number" placeholder="Enter marks " name = 'sub6'>
+<br><br>
+<input type="submit" class="btn" name="submitbtn">
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
