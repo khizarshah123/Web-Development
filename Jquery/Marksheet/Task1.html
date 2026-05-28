@@ -1,0 +1,172 @@
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+    <style>
+        span{
+            color: red;
+        }
+        #name{
+            margin-left: 44px;
+        }
+        #class
+        {
+             margin-left: 50px;
+        }
+        #totaloutput
+        {
+             margin-left:100px
+        }
+    </style>
+
+    Name <input type="text" id="name"><br>
+    <span id="nameerror"></span><br>
+
+    FatherName <input type="text" id="fname"> <br>
+    <span id="fnameerror"></span> <br>
+
+    RollNumber : <input type="text" id="rollnumber"><br>
+    <span id="rollnumbererror"></span><br>
+
+    Class <input type="text" id="class"><br>
+    <span id="classerror"></span><br>
+
+    1st Subject Marks <input type="number" id="sub1"> <br>
+    <span id="sub1error"></span><br>
+
+    Second Subject Marks : <input type="number" id="sub2"> <br>
+    <span id="sub2error"></span> <br>
+
+    3rd Subject Marks <input type="number" id="sub3"> <br>
+    <span id="sub3error"></span><br>
+
+    Fourth Subject Marks : <input type="number" id="sub4"> <br>
+    <span id="sub4error"></span><br>
+
+    Fifth Subject  Marks : <input type="number" id="sub5"> <br>
+    <span id="sub5error"></span><br>
+
+    6th Subject Marks : <input type="number" id="sub6"> <br>
+    <span id="sub6error"></span><br>
+ 
+
+    <button>Check output</button>
+    <span id="output"></span>
+
+    <span id="totaloutput"></span>
+
+    
+
+<script>
+
+    $(document).ready(function(){
+
+        $("button").click(function(){
+
+            a = $('#name').val()
+            b = $('#fname').val()
+            c = $('#rollnumber').val()
+            d = $('#class').val()
+
+            e =parseInt($('#sub1').val())
+            f =parseInt($('#sub2').val())
+            g =parseInt($('#sub3').val())
+            h =parseInt($('#sub4').val())
+            i =parseInt($('#sub5').val())
+            j =parseInt($('#sub6').val())
+
+
+    
+            if (a == '') {
+                $('#nameerror').html('Name is required')
+            } 
+          else if(a!=='')
+            {
+                $('#nameerror').html(' Name = '+a)
+            } 
+             if(b=='')
+            {
+                   $('#fnameerror').html('Name is required')
+            }
+            else if(b!=='')
+            {
+                $('#fnameerror').html(' fName = '+b)
+            } 
+            
+             if (c == '') {
+                $('#rollnumbererror').html('Roll No is required')
+            }
+             else if(c!=='')
+            {
+                $('#rollnumbererror').html(c)
+            } 
+            if (d == '') {
+                $('#classerror').html('Class is required')
+            }
+            if(d!=='')
+            {
+                $('#classerror').html(d)
+            } 
+          
+            if (isNaN(e)){
+                $('#sub1error').html('Subject 1 Makrs is required')
+            }
+            else if(e!=='')
+            {
+                $('#sub1error').html(e)
+            } 
+            
+            if (isNaN(f)) {
+                $('#sub2error').html('Subject 2 Marks is required')
+            }
+            else if(f!=='')
+            {
+                $('#sub2error').html(f)
+            } 
+           
+              if (isNaN(g)) {
+                $('#sub3error').html('Subject 3 Marks is required')
+            }
+            else if(g!=='')
+            {
+                $('#sub3error').html(g)
+            } 
+             
+               if (isNaN(h)) {
+                $('#sub4error').html('Subject 4 Marks is required')
+            }
+            else if(h!=='')
+            {
+                $('#sub4error').html(h)
+            } 
+               if (isNaN(i)) {
+                $('#sub5error').html('Subject 5 Marks is required')
+            }
+            else if(i!=='')
+            {
+                $('#sub5error').html(i)
+            } 
+               if (isNaN(j)) {
+                $('#sub6error').html('Subject 6 Marks is required')
+    
+            }
+
+              else if(j!=='')
+            {
+                $('#sub6error').html(j)
+                 
+                
+            } 
+
+        
+               obt = e + f + g + h + i + j;
+                 per = obt/500 * 100;
+    
+                  $('#totaloutput').html('Percentage is = '+per+'%')
+
+
+         })
+
+           
+        })
+
+</script>
