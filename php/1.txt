@@ -1,1 +1,29 @@
+PHP 
+    Server Side lang -> db connect 
 
+    Personal Home Page(old)
+    Hypertext PreProcessor (updated)
+
+    XAMPP / WAMPP => Server 
+
+            PHP Code Run Server => 127.0.0
+            Database 
+
+
+        XAMPP =>  donwload 
+
+
+        filename.extension 
+        one.php
+
+       // varient Data type 
+
+      <?php
+    // php body 
+      ?>
+
+            $a = 50;
+
+            //Printing
+            // $a = "Khizar";
+            // echo "My Name is : ".$a;
