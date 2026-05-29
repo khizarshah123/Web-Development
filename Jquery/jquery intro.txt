@@ -1,0 +1,19 @@
+jQuery is a fast and lightweight JavaScript library used to make web development easier. It helps developers write less code for tasks like:
+
+* Handling events
+* Creating animations
+* Manipulating HTML/CSS
+* Making AJAX requests
+* Working with the DOM (Document Object Model)
+
+Its main slogan is: **“Write Less, Do More.”**
+
+Example:
+
+```javascript
+$("#btn").click(function(){
+    alert("Button clicked!");
+});
+```
+
+Here, jQuery selects the button and adds a click event with very little code.
