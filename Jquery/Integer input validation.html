@@ -1,0 +1,28 @@
+<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+<input type="text" placeholder="Enter Any Data" id="name"> <br>
+<span id="ErrorData"></span><br>
+<button>Get Data</button>
+
+
+<script>
+
+    $(document).ready(function(){
+        
+        $("button").click(function(){
+        var a = parseInt($("#name").val()) ;
+
+
+            if(isNaN(a)){
+                $("#ErrorData").html("Value is Required")
+            }else{
+                alert(a)
+                $("#ErrorData").html("")
+            }
+
+        })
+
+    })
+
+</script>
+
