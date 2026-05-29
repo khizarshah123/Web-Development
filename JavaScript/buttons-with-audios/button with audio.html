@@ -1,0 +1,48 @@
+<textarea readonly cols="120" rows="10" id="Keyboard"></textarea> <br><br>
+
+
+<button onclick="keyboard('A')">A</button>
+<button onclick="keyboard('B')">B</button>
+<button onclick="keyboard('C')">C</button>
+<button onclick="keyboard('D')">D</button>
+<button onclick="Clear('Clear')">Clear</button>
+
+<script>
+
+    function keyboard(res){
+
+        document.getElementById('Keyboard').innerHTML += res
+    
+
+        if(res == 'A'){
+            a = new Audio("a.mp3")
+            a.play();
+        }
+
+        else if(res == 'B')
+        {
+            b = new Audio("b.mp3")
+            b.play();
+        }
+
+        else if(res == 'C')
+        {
+            c = new Audio("c.mp3")
+            c.play();
+        }
+
+         else if(res == 'D')
+        {
+            d = new Audio("d.mp3")
+            d.play();
+        }
+    }
+
+    function Clear()
+    {
+        document.getElementById("Keyboard").innerHTML = ''
+    }
+
+
+
+</script>
