@@ -1,0 +1,30 @@
+HTML stands for **HyperText Markup Language**. It is the standard markup language used to create the structure of web pages.
+
+HTML is used to add elements like:
+
+* Headings
+* Paragraphs
+* Images
+* Links
+* Tables
+* Forms
+* Buttons
+
+It works with CSS for styling and JavaScript for functionality.
+
+Example:
+
+```html id="8vtp9z"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is my first webpage.</p>
+</body>
+</html>
+```
+
+Here, HTML creates the basic structure and content of the webpage.
