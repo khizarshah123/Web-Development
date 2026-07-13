@@ -1,5 +1,5 @@
 <?php
-$conn =  mysqli_connect('localhost', 'root', '', 'regristrationformdata') or die();
+$conn =  mysqli_connect('localhost', 'root', '', 'Database_Name') or die();
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     if (empty($name) || empty($email) || empty($password)) {
         echo ('Fields are empty');
     } else {
-        $query = "INSERT INTO formdata (name,email,pass)VALUES('$name','$email','$password')";
+        $query = "INSERT INTO Table_Name (name,email,pass)VALUES('$name','$email','$password')";
 
         $res = mysqli_query($conn, $query);
 
