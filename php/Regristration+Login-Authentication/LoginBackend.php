@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$connect = mysqli_connect('localhost', 'root', '', 'regristrationformdata') or die();
+$connect = mysqli_connect('localhost', 'root', '', 'Database_Name') or die();
 
 
 if (isset($_POST['submit'])) {
@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     if (empty($email)  || empty($pass)) {
         echo ('Fields are empty');
     } else {
-        $query = "SELECT * FROM formdata WHERE email = '$email' AND pass = '$pass'";
+        $query = "SELECT * FROM Table_Name WHERE email = '$email' AND pass = '$pass'";
 
         $result = mysqli_query($connect, $query);
 
